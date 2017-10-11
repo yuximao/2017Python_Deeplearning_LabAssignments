@@ -35,9 +35,6 @@ def plot_cluster(mu,cluster):
     plt.scatter(mu[:,0],mu[:,1],marker = 'x', s = 150, linewidths = 5, zorder = 10)
     plt.show()
 
-
-
-
 x = []
 with open('Customers.csv') as f:
     f_csv = csv.reader(f)

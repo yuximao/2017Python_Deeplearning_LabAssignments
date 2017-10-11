@@ -1,4 +1,4 @@
-import matplotlib.pyplot as plt
+
 import numpy as np
 from sklearn import datasets, metrics
 from sklearn.cross_validation import train_test_split
@@ -7,7 +7,6 @@ from sklearn import svm
 diabetes = datasets.load_diabetes()
 x = diabetes.data[:, np.newaxis, 2]
 y = diabetes.target
-#split the data for training and testing
 x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.2)
 
 
