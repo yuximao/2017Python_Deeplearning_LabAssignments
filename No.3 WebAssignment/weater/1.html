@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My weather search App</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+
+
+</head>
+
+<body class="body">
+
+<div ng-controller="View1Ctrl" style="top: 200px">
+    <div class="menu" id="div_SearchContainer">
+        <h1 align="absolute" style="text-align: center; color: dodgerblue">What's the weather today?</h1>
+        <input type="number" id="txt_placeName" placeholder="Which Zip-Code you are looking for?"
+               style="margin-left: 425px"/>
+
+        <br/><button id="btn_getReview" ng-click="getVenues()" style="margin-left: 380px">Get The Weather</button>
+    </div>
+
+    <div id="div_VenueList">
+        <ul>
+            <li ng-repeat="weather in venueList"
+                style="font-size: x-large; color: #5e5e5e; text-align: center; list-style: none">
+                <u>{{weather.main}}</u>
+            </li>
+        </ul>
+
+    </div>
+    <div align="center">
+        <img src="1.png">
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+
+</html>
