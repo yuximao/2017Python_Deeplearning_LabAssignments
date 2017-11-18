@@ -13,7 +13,6 @@ import android.widget.Button;
 import static android.R.attr.id;
 
 public class Signin extends AppCompatActivity {
-    private TextView info;
     private Button button;
 
 
@@ -21,15 +20,13 @@ public class Signin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signin);
-      info =(TextView)findViewById(R.id.info);
 
-        button=(Button)findViewById(R.id.toindex);
-        button.setOnClickListener(new View.OnClickListener(){
-
+        Button button=(Button)findViewById(R.id.toindex);
+        button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(Signin.this, index.class);
-                startActivity(intent2);
+                Intent intent = new Intent(Signin.this,Theindex.class);
+                startActivity(intent);
             }
         });
 

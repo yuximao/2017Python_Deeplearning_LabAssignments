@@ -26,7 +26,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-
         }  );
         signUp=(Button)findViewById(R.id.signup);
         signUp.setOnClickListener(new View.OnClickListener(){
